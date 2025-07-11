@@ -17,8 +17,7 @@
       "parameter": "",
       "topic": "",
       "framePrefix": "",
-      "order": 1,
-      "filePath": "/home/unitree/lidarcloud/go2_description/urdf/go2_description.urdf"
+      "order": 1
     }
   },
   "cameraState": {
