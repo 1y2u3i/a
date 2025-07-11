@@ -1,0 +1,150 @@
+{
+  "layers": {
+    "43ad66fd-27de-476b-aa12-e10669f78eb4": {
+      "displayMode": "auto",
+      "fallbackColor": "#ffffff",
+      "showAxis": false,
+      "axisScale": 1.7,
+      "showOutlines": true,
+      "opacity": 1,
+      "visible": true,
+      "frameLocked": true,
+      "instanceId": "43ad66fd-27de-476b-aa12-e10669f78eb4",
+      "label": "URDF",
+      "layerId": "foxglove.Urdf",
+      "sourceType": "url",
+      "url": "https://1y2u3i.github.io/a/urdf/go2_description.urdf",
+      "parameter": "",
+      "topic": "",
+      "framePrefix": "",
+      "order": 1,
+      "filePath": "/home/unitree/lidarcloud/go2_description/urdf/go2_description.urdf"
+    }
+  },
+  "cameraState": {
+    "perspective": true,
+    "distance": 13.966745921842287,
+    "phi": 34.989922661602264,
+    "thetaOffset": 160.4308617318829,
+    "targetOffset": [
+      -0.1615708615313627,
+      -0.5096826376845482,
+      -1.7567110616936727e-16
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "targetOrientation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "fovy": 45,
+    "near": 0.01,
+    "far": 5000
+  },
+  "followMode": "follow-pose",
+  "scene": {
+    "transforms": {
+      "showLabel": false,
+      "editable": true
+    }
+  },
+  "transforms": {
+    "frame:FL_hip": {
+      "rpyCoefficient": [
+        1,
+        0,
+        0
+      ]
+    }
+  },
+  "topics": {
+    "/lio_sam_ros2/feature/cloud_corner": {
+      "visible": true,
+      "colorMode": "flat",
+      "flatColor": "#00ff00",
+      "pointSize": 5
+    },
+    "/lio_sam_ros2/feature/cloud_surface": {
+      "visible": true,
+      "colorMode": "flat",
+      "flatColor": "#ff55ff",
+      "pointSize": 3
+    },
+    "/lio_sam_ros2/deskew/cloud_deskewed": {
+      "visible": true,
+      "colorMode": "colormap",
+      "flatColor": "#ffffff",
+      "pointSize": 3,
+      "colorField": "intensity",
+      "colorMap": "turbo"
+    },
+    "/lio_sam_ros2/mapping/map_local": {
+      "visible": false,
+      "colorMode": "colormap",
+      "colorField": "x",
+      "colorMap": "turbo",
+      "pointSize": 3
+    },
+    "/lio_sam_ros2/mapping/odometry": {
+      "visible": true,
+      "poseStyle": "axes",
+      "axesSize": 0.5,
+      "showCovariance": true
+    },
+    "/lio_sam_ros2/dogOdomProcess/DogOdomGlobal": {
+      "visible": true,
+      "poseStyle": "axes",
+      "axesSize": 0.2,
+      "showCovariance": true
+    },
+    "/lio_sam_ros2/mapping/loop_closure_constraints": {
+      "visible": false
+    },
+    "/lio_sam_ros2/mapping/trajectory": {
+      "visible": true,
+      "colorField": "intensity",
+      "colorMode": "colormap",
+      "colorMap": "turbo"
+    },
+    "/lio_sam_ros2/imu/path": {
+      "visible": false
+    },
+    "/lio_sam_ros2/mapping/path": {
+      "visible": false
+    },
+    "/initialpose": {
+      "visible": false
+    },
+    "/mapping/grid_map": {
+      "visible": false
+    },
+    "/move_base_simple/goal": {
+      "visible": false
+    },
+    "/utlidar/cloud_deskewed": {
+      "visible": true,
+      "colorField": "intensity",
+      "colorMode": "colormap",
+      "colorMap": "turbo"
+    },
+    "/uslam/cloud_map": {
+      "visible": false
+    }
+  },
+  "publish": {
+    "type": "point",
+    "poseTopic": "/move_base_simple/goal",
+    "pointTopic": "/clicked_point",
+    "poseEstimateTopic": "/initialpose",
+    "poseEstimateXDeviation": 0.5,
+    "poseEstimateYDeviation": 0.5,
+    "poseEstimateThetaDeviation": 0.26179939
+  },
+  "imageMode": {},
+  "followTf": "base_link"
+}
